@@ -2,6 +2,6 @@ import React from 'react'
 
 export const App = () => {
   return (
-    <div>Mundo Limpieza</div>
+    <div className="bg-red-500">Mundo Limpieza</div>
   )
 }
