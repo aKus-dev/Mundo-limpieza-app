@@ -1,16 +1,16 @@
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo2.png';
 
 export const MenuDesktop = () => {
     return (
-        <header className="hidden p-6 max-h-[80px] max-w-[1350px] fixed top-0 inset-0 mx-auto w-[100%] lg:flex lg:justify-between">
+        <header className="hidden p-10 max-h-[80px] max-w-[1350px] fixed top-0 inset-0 mx-auto w-[100%] lg:flex lg:justify-between">
             <img
-                className="h-[30px] cursor-pointer"
+                className="h-[45px] cursor-pointer"
                 src={Logo}
                 alt="Logo"
             />
 
             <nav>
-                <ul className="flex gap-8 text-white font-text">
+                <ul className="flex gap-8 text-white font-text text-[1.6rem]">
                     <li>
                         <a href="#">Acerca</a>
                     </li>

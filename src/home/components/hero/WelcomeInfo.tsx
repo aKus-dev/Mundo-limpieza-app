@@ -4,8 +4,8 @@ export const WelcomeInfo = () => {
     return (
         <div className="h-screen text-center grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-none ">
             <div className="self-center px-6 flex flex-col items-center gap-4 lg:gap-6">
-                <h1 className="font-title text-primary text-[35px] md:text-[45px]">Mundo Limpieza</h1>
-                <p className="text-primary font-text text-[15px] max-w-[500px]">Productos de limpieza que te ayudarán a remover profundamente las sucediades acumuladas </p>
+                <h1 className="font-title text-primary text-[3.5rem] md:text-[45px]">Mundo Limpieza</h1>
+                <p className="text-primary font-text text-[1.5rem] max-w-[500px]">Productos de limpieza que te ayudarán a remover profundamente las sucediades acumuladas </p>
 
                 <ButtonGradient text="Siguiente" />
             </div>
