@@ -1,7 +1,10 @@
-import { Welcome } from '../components';
+import { Header, WelcomeInfo } from '../components';
 
 export const HomeScreen = () => {
   return (
-    <Welcome />
+    <div className="h-screen">
+      <Header />
+      <WelcomeInfo />
+    </div>
   )
 }
