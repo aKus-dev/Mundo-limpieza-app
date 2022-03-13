@@ -9,9 +9,9 @@ export const Hamburguer = () => {
    
     return (
         <div className="flex flex-col gap-[6px] cursor-pointer" onClick={handleHamburguer}>
-            <span ref={span1} className="h-[2px] w-[25px] bg-white duration-300"></span>
-            <span ref={span2} className="h-[2px] w-[15px] bg-white duration-300"></span>
-            <span ref={span3} className="h-[2px] w-[25px] bg-white duration-300"></span>
+            <span ref={span1} className="h-[2px] w-[25px] bg-[#484848] duration-300"></span>
+            <span ref={span2} className="h-[2px] w-[15px] bg-[#484848] duration-300"></span>
+            <span ref={span3} className="h-[2px] w-[25px] bg-[#484848] duration-300"></span>
         </div>
     )
 }

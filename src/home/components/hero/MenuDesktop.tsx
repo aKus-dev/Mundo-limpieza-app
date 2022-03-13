@@ -1,22 +1,27 @@
-import Star from '../../assets/star.svg';
+import Logo from '../../assets/logo.png';
 
 export const MenuDesktop = () => {
-  return (
-    <div className="hidden md:flex md:justify-between md:items-center md:px-4">
-       <img src={Star} alt="Logo" />
+    return (
+        <header className="hidden p-6 max-h-[80px] max-w-[1350px] fixed top-0 inset-0 mx-auto w-[100%] lg:flex lg:justify-between">
+            <img
+                className="h-[30px] cursor-pointer"
+                src={Logo}
+                alt="Logo"
+            />
 
-      <div className="text-black-50 uppercase">
-        <ul className="flex gap-6">
-          <li className="cursor-pointer hover:text-white duration-300">Inicio</li>
-          <li className="cursor-pointer hover:text-white duration-300">Productos</li>
-          <li className="cursor-pointer hover:text-white duration-300">Información</li>
-        </ul>
-      </div>
+            <nav>
+                <ul className="flex gap-8 text-white font-text">
+                    <li>
+                        <a href="#">Acerca</a>
+                    </li>
 
-      <div className="flex gap-4">
-        <i className="fa fa-magnifying-glass text-[20px] cursor-pointer"></i>
-        <i className="fa-solid fa-cart-shopping text-[20px] cursor-pointer"></i>
-      </div>
-    </div>
-  )
+                    <li>
+                        <a className="border-solid border-white border-[1px] rounded-[5px] p-1" href="#">Productos</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+    )
 }

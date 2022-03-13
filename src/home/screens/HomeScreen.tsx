@@ -1,7 +1,7 @@
-import { Hero } from '../components';
+import { Welcome } from '../components';
 
 export const HomeScreen = () => {
   return (
-    <Hero />
+    <Welcome />
   )
 }
