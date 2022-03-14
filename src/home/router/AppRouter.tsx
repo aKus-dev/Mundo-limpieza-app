@@ -7,6 +7,7 @@ export const AppRouter = () => {
             <Routes>
                 <Route path="/" element={<HomeScreen />} />
                 <Route path="/category" element={<CategoryScreen />} />
+                <Route path="*" element={ <h1 className="text-3xl">Not found</h1> } />
             </Routes>
         </Router>
     )
