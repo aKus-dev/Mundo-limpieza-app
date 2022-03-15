@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ButtonGradient } from '../';
 
 interface CardProps {
@@ -7,6 +8,7 @@ interface CardProps {
 }
 
 export const Card = ({ img, title, text }: CardProps) => {
+
     return (
         <div className="min-h-[450px] w-[80%] max-w-[350px] flex flex-col md:duration-300 md:hover:scale-105 bg-white rounded-[30px] shadow-2xl ">
 
@@ -24,7 +26,9 @@ export const Card = ({ img, title, text }: CardProps) => {
                 <h2 className="font-title text-[2rem] text-primary">{title}</h2>
                 <p className="text-[1.5rem]">{text}</p>
 
-                <ButtonGradient text="Ver productos" />
+                <Link to={`/shop?category=${title.toLowerCase()}`} className="w-full">
+                    <ButtonGradient text="Ver productos" />
+                </Link>
 
             </div>
         </div>
