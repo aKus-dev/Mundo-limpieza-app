@@ -4,7 +4,7 @@ export const Product = () => {
     return (
         <article className="w-[80%] max-w-[260px] min-h-[420px] rounded-[25px] shadow-[0_0_15px_#e1e1e1] flex flex-col">
 
-            <div className="bg-gradient-to-r from-[#FA9630] to-[#FF6042] rounded-[25px]">
+            <div className="bg-gradient-to-r from-[#FA9630] to-[#FF6042] rounded-[25px] h-[55%]">
                 <img
                     className=" max-h-[220px] mx-auto"
                     src="./assets/xd.png"
