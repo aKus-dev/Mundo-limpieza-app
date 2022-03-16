@@ -4,10 +4,9 @@ import { ButtonGradient } from '../';
 interface CardProps {
     img: string;
     title: string;
-    text: string;
 }
 
-export const Card = ({ img, title, text }: CardProps) => {
+export const Card = ({ img, title }: CardProps) => {
 
     return (
         <div className="min-h-[450px] w-[80%] max-w-[350px] flex flex-col md:duration-300 md:hover:scale-105 bg-white rounded-[30px] shadow-2xl ">
@@ -22,9 +21,8 @@ export const Card = ({ img, title, text }: CardProps) => {
 
             </div>
 
-            <div className="rounded-b-[30px] min-h-[200px] text-center p-8 flex flex-col items-center gap-6">
-                <h2 className="font-title text-[2rem] text-primary">{title}</h2>
-                <p className="text-[1.5rem]">{text}</p>
+            <div className="rounded-b-[30px] min-h-[200px] text-center p-8 flex flex-col items-center justify-center gap-6">
+                <h2 className="font-title text-[2.25rem] text-primary">{title}</h2>
 
                 <Link to={`/shop?category=${title.toLowerCase()}`} className="w-full">
                     <ButtonGradient text="Ver productos" />
