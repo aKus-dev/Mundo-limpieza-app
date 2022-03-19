@@ -1,8 +1,8 @@
 export { ProductsContainer } from './products/ProductsContainer';
 export { Header } from './helpers/Header';
-export { Input } from './products/Input';
-export { Search } from './products/Search';
-export { Filter } from './products/Filter';
+export { Input } from './helpers/Input';
+export { Search } from './helpers/Search';
+export { Filter } from './helpers/Filter';
 export { Product } from './products/Product';
 export { ProductImage } from '../components/products/ProductImage';
 export { ProductFeatures } from '../components/products/ProductFeatures';
