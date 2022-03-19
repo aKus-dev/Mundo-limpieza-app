@@ -7,7 +7,7 @@ export const CategoryScreen = () => {
 
             <Header />
 
-            <div className="min-h-screen pt-10 pb-16 flex flex-wrap gap-24 justify-center items-center">
+            <div className="min-h-screen pt-10 pb-16 px-8 flex flex-wrap gap-24 justify-center items-center">
                 <Card img="./assets/home.png" title="Hogar"  />
                 <Card img="./assets/company.png" title="Empresas"  />
             </div>
