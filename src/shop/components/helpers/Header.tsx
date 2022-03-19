@@ -11,7 +11,7 @@ export const Header = () => {
 
     return (
         <header className="p-12 flex items-center justify-between">
-            <BackButton colorMobile='orange-500' colorDesktop='orange-500' />
+            <BackButton colorMobile='text-orange-500'/>
 
             <h1 className="text-[2rem] font-title text-primary font-weight-">{category || ''}</h1>
 

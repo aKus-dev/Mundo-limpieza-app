@@ -2,12 +2,11 @@ import { useNavigate, Link } from 'react-router-dom';
 
 interface BackButtonProps {
     colorMobile:string;
-    colorDesktop:string;
     fixed?:boolean
 }
 
 
-export const BackButton = ({colorMobile, colorDesktop, fixed}: BackButtonProps) => {
+export const BackButton = ({colorMobile, fixed}: BackButtonProps) => {
 
     const navigate = useNavigate();
 
@@ -17,7 +16,7 @@ export const BackButton = ({colorMobile, colorDesktop, fixed}: BackButtonProps) 
 
     return (
         <Link to="/shop" onClick={handleBackButton}>
-            <i className={`fa-solid fa-angle-left text-[3.5rem] text-${colorMobile} lg:text-${colorDesktop} cursor-pointer ${fixed && 'fixed left-12 top-8'}`}></i>
+            <i className={`fa-solid fa-angle-left text-[3.5rem] ${colorMobile} lg:text-orange-500 cursor-pointer ${fixed && 'fixed left-12 top-8'}`}></i>
         </Link>
     )
 }
