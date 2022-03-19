@@ -4,6 +4,7 @@ export { Input } from './helpers/Input';
 export { Search } from './helpers/Search';
 export { Filter } from './helpers/Filter';
 export { Product } from './products/Product';
+export { BackButton } from './helpers/BackButton';
 export { ProductImage } from '../components/products/ProductImage';
 export { ProductFeatures } from '../components/products/ProductFeatures';
 export { ProductInfo } from '../components/products/ProductInfo';
