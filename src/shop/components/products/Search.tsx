@@ -1,4 +1,4 @@
-import { Input, Filter } from './';
+import { Input, Filter } from '../';
 
 export const Search = () => {
     return (

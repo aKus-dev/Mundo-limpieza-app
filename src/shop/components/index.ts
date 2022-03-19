@@ -1,6 +1,12 @@
+export { ProductsContainer } from './products/ProductsContainer';
 export { Header } from './helpers/Header';
-export { Search } from './Search';
-export { Input } from './Input';
-export { Filter } from './Filter';
-export { ProductsContainer } from './ProductsContainer';
-export { Product } from './Product';
+export { Input } from './products/Input';
+export { Search } from './products/Search';
+export { Filter } from './products/Filter';
+export { Product } from './products/Product';
+export { ProductImage } from '../components/products/ProductImage';
+export { ProductFeatures } from '../components/products/ProductFeatures';
+export { ProductInfo } from '../components/products/ProductInfo';
+export { ProductButtons } from '../components/products/ProductButtons';
+export { ProductQuantity } from './products/ProductQuantity';
+export { AddToCart } from './products/AddToCart';

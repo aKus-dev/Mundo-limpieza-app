@@ -6,10 +6,7 @@ export const Header = () => {
     const { search } = useLocation();
     let { category } = queryString.parse(search)
 
-
     category = category!.toString().toLocaleUpperCase();
-    console.log(category)
-
 
     return (
         <header className="p-12 flex items-center justify-between">

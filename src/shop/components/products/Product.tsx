@@ -1,4 +1,4 @@
-import { ButtonGradient } from '../../home/components'
+import { Link } from 'react-router-dom';
 
 export const Product = () => {
     return (
@@ -21,7 +21,11 @@ export const Product = () => {
                 </div>
 
                 <div className="flex gap-6 justify-center items-center">
-                    <ButtonGradient text="Ver" />
+
+                    <Link to="/shop/1" className="text-center bg-gradient-to-r from-[#FA9630] to-[#FF6042] py-2 px-8 rounded-[10px] text-white font-text font-bold w-[60%] max-w-[250px] text-[20px] md:duration-300 cursor-pointer md:hover:scale-105">
+                        Ver
+                    </Link>
+
 
                     <div className="bg-gradient-to-b from-[#FA9630] to-[#FF6042] w-[40px] h-[40px] rounded-[50%] flex items-center justify-center duration-300 md:hover:scale-110 cursor-pointer">
                         <i className="fa-solid fa-heart text-white text-[18px]"></i>
