@@ -7,8 +7,6 @@ export const SavedScreen = () => {
 
             <div className="max-w-[1000px] mx-auto flex flex-col gap-16 items-center">
                 <SavedProduct />
-                <SavedProduct />
-                <SavedProduct />
             </div>
         </div>
     )

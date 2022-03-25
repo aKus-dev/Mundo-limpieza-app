@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "categories": ["hogar"],
+        "name": "Desengrasante",
+        "shortDesc": "Desengrasante con gran poder limpiador",
+        "desc": "Desengrasante con gran poder limpiador. Penetra profundamente en las suciedades desprendiendo las mismas de la superficie",
+        "price": 900
+    },
+    {
+        "id": 2,
+        "categories": ["hogar"],
+        "name": "Bactericida",
+        "shortDesc": "Bactericida para eliminar malos olores",
+        "desc": "Bactericida para eliminar malos olores ocasionados por acumulación de orina tanto humana como animal",
+        "price": 500
+    },
+    {
+        "id": 3,
+        "categories": ["hogar"],
+        "name": "Limpia vidrios",
+        "shortDesc": "Limpieza y efecto antiestático",
+        "desc": "Producto con gran capacidad de limpieza y efecto antiestático, ideal para la limpieza de vidrios, cristales, espejos, scanner, vitrinas, fotocopiadoras, etc",
+        "price": 600
+    },
+    {
+        "id": 4,
+        "categories": ["hogar"],
+        "name": "Detergente",
+        "shortDesc": "Limpieza y efecto antiestático",
+        "desc": "Producto con gran capacidad de limpieza y efecto antiestático, ideal para la limpieza de vidrios, cristales, espejos, scanner, vitrinas, fotocopiadoras, etc",
+        "price": 700
+    },
+    {
+        "id": 5,
+        "categories": ["hogar"],
+        "name": "Limpiador aromatizante",
+        "shortDesc": "Perfuma y refresca el ambiente",
+        "desc": "Es una línea de productos formulados con esencias aromáticas. Perfuman y refrescan el ambiente.",
+        "price": 800
+    }
+]
