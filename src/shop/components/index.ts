@@ -1,6 +1,5 @@
 export { SavedHeader } from './saved/SavedHeader';
 export { SavedProduct } from './saved/SavedProduct';
-export { SavedProductInfo } from './saved/SavedProductInfo';
 export { SavedProductImage } from './saved/SavedProductImage';
 
 export { CartHeader } from './cart/CartHeader';

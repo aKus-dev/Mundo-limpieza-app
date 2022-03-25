@@ -3,8 +3,8 @@ import products from '../data/data.json';
 
 interface Saved {
     id: number;
-    price:number;
-    name:string;
+    price: number;
+    name: string;
 }
 
 const getInitialState = (): Saved[] => {
@@ -18,13 +18,18 @@ const savedProducts = createSlice({
     initialState: getInitialState(),
     reducers: {
         add(state, action) {
+            //TODO Validar si ese producto ya esta guardado
             const product = products.find(product => product.id === action.payload);
 
-            if(product) {
+            if (product) {
                 const { id, price, name } = product;
-                return [...state, {id, price, name}]
+                localStorage.setItem('saved', JSON.stringify([...state, { id, price, name }]))
+                return [...state, { id, price, name }]
             }
-
+        },
+        remove(state, action) {
+            state = state.filter(product => product.id !== action.payload);
+            localStorage.setItem('saved', JSON.stringify([...state]))
             return state;
         }
     }
@@ -34,4 +39,4 @@ const savedProducts = createSlice({
 export default savedProducts.reducer;
 
 // Exporto las acciones
-export const { add } = savedProducts.actions;
+export const { add, remove } = savedProducts.actions;
