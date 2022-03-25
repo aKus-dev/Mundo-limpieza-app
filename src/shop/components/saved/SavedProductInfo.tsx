@@ -1,6 +1,5 @@
-
-
 export const SavedProductInfo = () => {
+
     return (
         <div className="flex-grow flex flex-col justify-end gap-6 pb-4 relative">
             <h2 className="font-text font-bold text-primary text-[17px]">Nombre del producto</h2>

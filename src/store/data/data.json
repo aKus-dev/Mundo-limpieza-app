@@ -34,7 +34,15 @@
     {
         "id": 5,
         "categories": ["hogar"],
-        "name": "Limpiador aromatizante",
+        "name": "Aromatizante",
+        "shortDesc": "Perfuma y refresca el ambiente",
+        "desc": "Es una línea de productos formulados con esencias aromáticas. Perfuman y refrescan el ambiente.",
+        "price": 800
+    },
+    {
+        "id": 6,
+        "categories": ["hogar"],
+        "name": "Aromatizante",
         "shortDesc": "Perfuma y refresca el ambiente",
         "desc": "Es una línea de productos formulados con esencias aromáticas. Perfuman y refrescan el ambiente.",
         "price": 800

@@ -1,6 +1,9 @@
 import { SavedHeader, SavedProduct } from '../components';
 
+
 export const SavedScreen = () => {
+    
+
     return (
         <div className="px-12 max-w-[1200px] mx-auto">
             <SavedHeader />
