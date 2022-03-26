@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import products from '../data/data.json';
-import { alreadySaved } from './helpers/alreadySaved';
+import { alreadySaved } from '../helpers/alreadySaved';
 
 export interface Saved {
     id: number;

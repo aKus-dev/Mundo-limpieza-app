@@ -1,4 +1,4 @@
-import { Saved } from '../savedSlice';
+import { Saved } from '../slices/savedSlice';
 
 export const alreadySaved = (id: number) => {
     

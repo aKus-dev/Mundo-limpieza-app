@@ -1,10 +1,14 @@
 import { ProductQuantity, AddToCart } from '../';
 
-export const ProductButtons = () => {
+interface ProductButtonsProps {
+    price:number;
+}
+
+export const ProductButtons = ({price}: ProductButtonsProps) => {
     return (
         <>
             <div className="mt-10 px-4 gap-10 flex items-center justify-center">
-                <span className="font-bold text-[30px] text-primary">$900</span>
+                <span className="font-bold text-[30px] text-primary">${price}</span>
                 <ProductQuantity />
             </div>
 

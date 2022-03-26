@@ -40,7 +40,7 @@ export const Product = ({ id, name, shortDesc, price }: ProductProps) => {
 
                 <div className="flex gap-6 justify-center items-center">
 
-                    <Link to="/shop/1" className="text-center bg-gradient-to-r from-[#FA9630] to-[#FF6042] py-2 px-8 rounded-[10px] text-white font-text font-bold w-[60%] max-w-[250px] text-[20px] md:duration-300 cursor-pointer md:hover:scale-105">
+                    <Link to={`/shop/${id}`} className="text-center bg-gradient-to-r from-[#FA9630] to-[#FF6042] py-2 px-8 rounded-[10px] text-white font-text font-bold w-[60%] max-w-[250px] text-[20px] md:duration-300 cursor-pointer md:hover:scale-105">
                         Ver
                     </Link>
 

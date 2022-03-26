@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const AddToCart = () => {
     return (
         <div className="flex justify-center mt-8  mb-16">
