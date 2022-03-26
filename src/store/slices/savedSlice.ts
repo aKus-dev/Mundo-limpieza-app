@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import products from '../data/data.json';
+import { alreadySaved } from './helpers/alreadySaved';
 
-interface Saved {
+export interface Saved {
     id: number;
     price: number;
     name: string;
@@ -18,7 +19,9 @@ const savedProducts = createSlice({
     initialState: getInitialState(),
     reducers: {
         add(state, action) {
-            //TODO Validar si ese producto ya esta guardado
+            const exists = alreadySaved(action.payload);
+            if(exists) return;
+
             const product = products.find(product => product.id === action.payload);
 
             if (product) {
