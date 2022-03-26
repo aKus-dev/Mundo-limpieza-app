@@ -1,9 +1,13 @@
 import { Saved } from '../slices/savedSlice';
 
 export const alreadySaved = (id: number) => {
-    
+
+    let products;
     const savedProducts = localStorage.getItem("saved");
-    const products = JSON.parse(savedProducts!);
+
+    if (!savedProducts) return false;
+
+    products = JSON.parse(savedProducts);
 
     const exist = products.find((product: Saved) => product.id === id);
 
