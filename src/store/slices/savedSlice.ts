@@ -14,7 +14,7 @@ const getInitialState = (): Saved[] => {
     return [];
 }
 
-const savedProducts = createSlice({
+const savedSlice= createSlice({
     name: 'saved',
     initialState: getInitialState(),
     reducers: {
@@ -39,7 +39,7 @@ const savedProducts = createSlice({
 })
 
 // Reducer que maneja las acciones definidas, dependiendo de la acción que disparemos retorna un estado u otro
-export default savedProducts.reducer;
+export default savedSlice.reducer;
 
 // Exporto las acciones
-export const { add, remove } = savedProducts.actions;
+export const { add, remove } = savedSlice.actions;
