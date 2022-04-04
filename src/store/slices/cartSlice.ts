@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { alreadyInTheCart } from "../helpers/alreadyInTheCart";
 
 export interface Cart {
     id: number;
@@ -18,6 +19,9 @@ const cartSlice = createSlice({
     initialState: getInitialState(),
     reducers: {
         add(state, action) {
+            const exists = alreadyInTheCart(action.payload.id);
+            if(exists) return;
+
             localStorage.setItem('cart', JSON.stringify([...state, action.payload]))
             return [...state, action.payload]
         },
