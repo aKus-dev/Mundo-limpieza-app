@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { add } from '../../../store/slices/savedSlice';
 import { useDispatch } from 'react-redux';
+import Swal from 'sweetalert2';
 
 interface ProductProps {
     id: number;
@@ -17,6 +18,15 @@ export const Product = ({ id, name, shortDesc, price }: ProductProps) => {
         dispatch(
             add(id)
         );
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Gurdado',
+            text: 'El producto ha guardado correctamente',
+            confirmButtonColor: '#FA9630',
+            iconColor: '#FA9630'
+
+        })
     }
 
     return (

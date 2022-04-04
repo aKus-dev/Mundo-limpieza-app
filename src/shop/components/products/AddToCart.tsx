@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { add } from '../../../store/slices/cartSlice';
 import { ProductButtonsContext } from '../contexts/ProductButtonsContext';
 import { useContext } from 'react';
+import Swal from 'sweetalert2'
 
 export const AddToCart = () => {
 
@@ -21,6 +22,15 @@ export const AddToCart = () => {
         dispatch(
             add(cartItem)
         )
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Agregado al carrito',
+            text: 'El producto ha añadido al carrito',
+            confirmButtonColor: '#FA9630',
+            iconColor: '#FA9630'
+
+        })
 
     }
 
