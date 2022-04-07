@@ -15,14 +15,15 @@ export const Product = ({ id, name, shortDesc, price }: ProductProps) => {
     const dispatch = useDispatch();
 
     const handleAddSavedProduct = (id: number) => {
+        
         dispatch(
             add(id)
         );
 
         Swal.fire({
             icon: 'success',
-            title: 'Gurdado',
-            text: 'El producto ha guardado correctamente',
+            title: 'Guardado',
+            text: 'El producto se ha guardado correctamente',
             confirmButtonColor: '#FA9630',
             iconColor: '#FA9630'
 
