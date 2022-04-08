@@ -26,7 +26,7 @@ export const AddToCart = () => {
         Swal.fire({
             icon: 'success',
             title: 'Agregado al carrito',
-            text: 'El producto ha añadido al carrito',
+            text: 'El producto se ha añadido al carrito',
             confirmButtonColor: '#FA9630',
             iconColor: '#FA9630'
 

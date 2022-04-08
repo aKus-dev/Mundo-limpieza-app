@@ -5,6 +5,7 @@ export { SavedProductImage } from './saved/SavedProductImage';
 export { CartHeader } from './cart/CartHeader';
 export { CartProductImage } from './cart/CartProductImage';
 export { CartProduct } from './cart/CartProduct';
+export { Total } from './cart/Total';
 
 export { ProductsContainer } from './products/ProductsContainer';
 export { ProductQuantity } from './products/ProductQuantity';

@@ -1,4 +1,4 @@
-import { CartHeader, CartProduct } from '../components';
+import { CartHeader, CartProduct, Total } from '../components';
 import { IRootState } from '../../store/interface/IRootState';
 import { useSelector } from 'react-redux';
 
@@ -16,7 +16,7 @@ export const CartScreen = () => {
         {
           cartProducts.length !== 0
             ? (
-              cartProducts.map(({id, name, price, quantity}) => (
+              cartProducts.map(({ id, name, price, quantity }) => (
                 <CartProduct key={id} id={id} name={name} price={price} quantity={quantity} />
               ))
             )
@@ -24,6 +24,10 @@ export const CartScreen = () => {
         }
       </div>
 
+      {
+        cartProducts.length !== 0 && <Total />
+      }
+      
     </div>
   )
 }
