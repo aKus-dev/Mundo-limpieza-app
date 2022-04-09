@@ -15,7 +15,6 @@ export { AddToCart } from './products/AddToCart';
 export { Header } from './helpers/Header';
 export { Input } from './helpers/Input';
 export { Search } from './helpers/Search';
-export { Filter } from './helpers/Filter';
 export { BackButton } from './helpers/BackButton';
 
 export { ProductImage } from '../components/products/ProductImage';

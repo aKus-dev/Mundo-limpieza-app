@@ -9,7 +9,7 @@ export const CartScreen = () => {
 
 
   return (
-    <div className="px-12 max-w-[1200px] mx-auto">
+    <div className="px-12 max-w-[1200px] mx-auto pb-16">
       <CartHeader />
 
       <div className="max-w-[1000px] mx-auto flex flex-col gap-16 items-center">

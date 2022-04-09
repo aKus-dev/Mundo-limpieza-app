@@ -28,11 +28,11 @@ export const MenuDesktop = () => {
             <nav>
                 <ul className="flex gap-8 font-text text-[1.6rem]">
                     <li>
-                        <a href="#" className={`text-${color}`}>Acerca</a>
+                        <Link to="#" className={`text-${color}`}>Acerca</Link>
                     </li>
 
                     <li>
-                        <a className={`border-solid border-${color} text-${color} border-[1px] rounded-[5px] p-1`} href="#">Productos</a>
+                        <Link  to="/shop?category=hogar" className={`border-solid border-${color} text-${color} border-[1px] rounded-[5px] p-1`}>Productos</Link>
                     </li>
                 </ul>
             </nav>

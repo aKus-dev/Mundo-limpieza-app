@@ -16,7 +16,7 @@ export const AppRouter = () => {
                     <Route path="/cart" element={<CartScreen />} />
                     <Route path="/shop" element={<ShopScreen />} />
                     <Route path="/shop/:id" element={<ProductScreen />} />
-                    <Route path="*" element={<h1 className="text-3xl">Not found</h1>} />
+                    <Route path="*" element={<h1 className="text-3xl">Página no encontrada</h1>} />
                 </Routes>
             </ScrollToTop>
         </Router>
